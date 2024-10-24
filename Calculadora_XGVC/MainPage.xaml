@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora_XGVC.MainPage">
+
+     <StackLayout BackgroundColor="Black">
+            <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+                <Entry Placeholder="0" x:Name="inter" HorizontalTextAlignment="End" TextColor="White" FontSize="36" IsReadOnly="True"/>
+            </Frame>
+            <Entry Placeholder="0" x:Name="Resultado" HorizontalTextAlignment="End" TextColor="White" FontSize="36" IsReadOnly="True"/>
+            <Grid Padding="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="C" Grid.Row="0" Grid.Column="0" TextColor="Red" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/> 
+            <Button Text="()" Grid.Row="0" Grid.Column="1" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="%" Grid.Row="0" Grid.Column="2" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="7" Grid.Row="1" Grid.Column="0" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            
+            <Button Text="8" Grid.Row="1" Grid.Column="1" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="9" Grid.Row="1" Grid.Column="2" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="4" Grid.Row="2" Grid.Column="0" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="5" Grid.Row="2" Grid.Column="1" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            
+            <Button Text="6" Grid.Row="2" Grid.Column="2" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="1" Grid.Row="3" Grid.Column="0" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="2" Grid.Row="3" Grid.Column="1" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="3" Grid.Row="3" Grid.Column="2" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="36" CornerRadius="90" Clicked="Numero"/>
+            
+            <Button Text="÷" Grid.Row="0" Grid.Column="3" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="40" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="x" Grid.Row="1" Grid.Column="3" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="27" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="-" Grid.Row="2" Grid.Column="3" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="50" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="+" Grid.Row="3" Grid.Column="3" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="40" CornerRadius="90" Clicked="Numero"/>
+           
+            <Button Text="0" Grid.Row="4" Grid.Column="0" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="40" CornerRadius="90" Grid.ColumnSpan="2" Clicked="Numero"/>
+            <Button Text="." Grid.Row="4" Grid.Column="2" TextColor="#AB57EB" BackgroundColor="#171718" FontSize="40" CornerRadius="90" Clicked="Numero"/>
+            <Button Text="=" Grid.Row="4" Grid.Column="3" TextColor="White" BackgroundColor="Purple" FontSize="40" CornerRadius="90" Clicked="Numero"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
